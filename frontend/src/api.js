@@ -36,4 +36,6 @@ export const api = {
     request(`/projects/${id}/stage-update/`, { method: 'POST', body: JSON.stringify(data) }),
   updateFinancials: (id, data) =>
     request(`/projects/${id}/financials/`, { method: 'PATCH', body: JSON.stringify(data) }),
+  addMilestone: (id, data) =>
+    request(`/projects/${id}/milestone/`, { method: 'POST', body: JSON.stringify(data) }),
 }
